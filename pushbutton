@@ -1,0 +1,13 @@
+org 0h
+Mov P2,0
+Mov P3,0
+Mulai:
+Mov p3, #00000000b
+Mov P3, P2
+Delay :Mov R0,#255
+Delay1 :Mov R1,#255
+Delay2 : NOP
+Djnz R1, Delay2
+Djnz R0, Delay1
+Ret
+End
